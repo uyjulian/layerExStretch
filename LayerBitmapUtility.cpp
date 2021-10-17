@@ -416,10 +416,7 @@ void SetLayerInformationOnLayerObject(tTJSVariantClosure clo, tTVPDrawFace *Face
 void UpdateLayerWithLayerObject(tTJSVariantClosure clo, tTVPRect *ur, tjs_int *ImageLeft, tjs_int *ImageTop)
 {
 	tTVPRect update_rect = *ur;
-	if (ImageLeft != 0 || ImageTop != 0)
-	{
-		update_rect.add_offsets(*ImageLeft, *ImageTop);
-	}
+	update_rect.add_offsets(ImageLeft != NULL ? *ImageLeft : 0, ImageTop != NULL ? *ImageTop : 0);
 	if (!update_rect.is_empty())
 	{
 		tTJSVariant args[4];
