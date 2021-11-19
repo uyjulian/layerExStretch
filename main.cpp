@@ -18,7 +18,7 @@
 //---------------------------------------------------------------------------
 bool StretchBlt(
 		tTVPRect cliprect,
-		const tTVPBaseBitmap *dest,
+		tTVPBaseBitmap *dest,
 		tTVPRect destrect, const tTVPBaseBitmap *ref,
 		tTVPRect refrect, tTVPBBBltMethod method, tjs_int opa,
 			bool hda, tTVPBBStretchType mode, tjs_real typeopt )
