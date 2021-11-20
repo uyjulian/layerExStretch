@@ -1,5 +1,6 @@
 
 
+#if defined(_M_IX86) || defined(_M_X64) || defined(_M_AMD64)
 #define _USE_MATH_DEFINES
 
 #include "tjsCommHead.h"
@@ -1209,4 +1210,5 @@ void TVPResampleImageSSE2( const tTVPResampleClipping &clip, const tTVPImageCopy
 		break;
 	}
 }
+#endif
 
