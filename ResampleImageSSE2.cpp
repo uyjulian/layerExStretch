@@ -1,6 +1,5 @@
 
 
-#if defined(_M_IX86) || defined(_M_X64) || defined(_M_AMD64)
 #define _USE_MATH_DEFINES
 
 #include "tjsCommHead.h"
@@ -15,6 +14,7 @@
 #include <cmath>
 #include <vector>
 
+#if defined(_M_IX86) || defined(_M_X64) || defined(_M_AMD64)
 #include <xmmintrin.h> // SSE
 #include <emmintrin.h> // SSE2
 
