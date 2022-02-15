@@ -33,7 +33,7 @@ public:
 	/* scan line */
 	const void * GetScanLine(tjs_uint l) const
 	{
-		if((tjs_int)l>=height )
+		if(l>=height )
 		{
 			TVPThrowExceptionMessage(TJS_W("Scan line %1 is range over (0 to %2)"), ttstr((tjs_int)l),
 				ttstr((tjs_int)height-1));
@@ -43,7 +43,7 @@ public:
 	}
 	void * GetScanLineForWrite(tjs_uint l)
 	{
-		if((tjs_int)l>=height )
+		if(l>=height )
 		{
 			TVPThrowExceptionMessage(TJS_W("Scan line %1 is range over (0 to %2)"), ttstr((tjs_int)l),
 				ttstr((tjs_int)height-1));
