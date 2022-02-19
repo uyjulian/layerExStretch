@@ -17,6 +17,7 @@
 #include <cmath>
 #include <vector>
 
+#include "tvpgl.h"
 #if 0
 #ifdef _WIN32
 #include "tvpgl_ia32_intf.h"

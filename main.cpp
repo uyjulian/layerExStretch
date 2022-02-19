@@ -8,6 +8,7 @@
 /////////////////////////////////////////////
 
 #include "ncbind/ncbind.hpp"
+#include "tvpgl.h"
 #include "LayerBitmapIntf.h"
 #include "LayerBitmapUtility.h"
 #include "ComplexRect.h"
@@ -102,6 +103,7 @@ bool StretchBlt(
 
 static void PreRegistCallback()
 {
+	TVPCreateTable();
 	iTJSDispatch2 *global = TVPGetScriptDispatch();
 	if (global)
 	{
