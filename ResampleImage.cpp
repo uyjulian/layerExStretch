@@ -722,7 +722,7 @@ void TVPResampleImage( const tTVPRect &cliprect, tTVPBaseBitmap *dest, const tTV
 			TVPResampleImageSSE2( clip, func, dest, destrect, src, srcrect, type, typeopt );
 		} else
 #endif
-#if defined(_M_IX86) || defined(_M_X64) || defined(_M_AMD64)
+#if 1 || defined(_M_IX86) || defined(_M_X64) || defined(_M_AMD64)
 		TVPResampleImageSSE2( clip, func, dest, destrect, src, srcrect, type, typeopt );
 #else
 		{
