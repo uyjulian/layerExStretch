@@ -1,4 +1,6 @@
 
+INCFLAGS += -Iexternal/simde
+
 SOURCES += main.cpp
 SOURCES += ComplexRect.cpp
 SOURCES += ResampleImage.cpp
