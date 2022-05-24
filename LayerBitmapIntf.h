@@ -39,7 +39,7 @@ public:
 				ttstr((tjs_int)height-1));
 		}
 
-		return (tjs_uint8*)bmpdata + (l * pitch);
+		return (tjs_uint8*)bmpdata + (pitch * (tjs_int)l);
 	}
 	void * GetScanLineForWrite(tjs_uint l)
 	{
@@ -49,7 +49,7 @@ public:
 				ttstr((tjs_int)height-1));
 		}
 
-		return (tjs_uint8*)bmpdata + (l * pitch);
+		return (tjs_uint8*)bmpdata + (pitch * (tjs_int)l);
 	}
 	tjs_int GetPitchBytes() const
 	{
