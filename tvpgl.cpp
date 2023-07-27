@@ -634,7 +634,7 @@ TVP_GL_FUNC_DECL(void, TVPAlphaBlend_o_c, (tjs_uint32 *dest, const tjs_uint32 *s
 
 TVP_GL_FUNC_DECL(void, TVPColorDodgeBlend_c, (tjs_uint32 *dest, const tjs_uint32 *src, tjs_int len))
 {
-	register tjs_uint32 tmp, tmp2, tmp3;
+	tjs_uint32 tmp, tmp2, tmp3;
 	for(int lu_n = 0; lu_n < len; lu_n++)
 	{
 		{
@@ -654,7 +654,7 @@ TVP_GL_FUNC_DECL(void, TVPColorDodgeBlend_c, (tjs_uint32 *dest, const tjs_uint32
 
 TVP_GL_FUNC_DECL(void, TVPColorDodgeBlend_HDA_c, (tjs_uint32 *dest, const tjs_uint32 *src, tjs_int len))
 {
-	register tjs_uint32 tmp, tmp2, tmp3;
+	tjs_uint32 tmp, tmp2, tmp3;
 	for(int lu_n = 0; lu_n < len; lu_n++)
 	{
 		{
@@ -674,7 +674,7 @@ TVP_GL_FUNC_DECL(void, TVPColorDodgeBlend_HDA_c, (tjs_uint32 *dest, const tjs_ui
 
 TVP_GL_FUNC_DECL(void, TVPColorDodgeBlend_HDA_o_c, (tjs_uint32 *dest, const tjs_uint32 *src, tjs_int len, tjs_int opa))
 {
-	register tjs_uint32 tmp, tmp2, tmp3;
+	tjs_uint32 tmp, tmp2, tmp3;
 	for(int lu_n = 0; lu_n < len; lu_n++)
 	{
 		{
@@ -695,7 +695,7 @@ TVP_GL_FUNC_DECL(void, TVPColorDodgeBlend_HDA_o_c, (tjs_uint32 *dest, const tjs_
 
 TVP_GL_FUNC_DECL(void, TVPColorDodgeBlend_o_c, (tjs_uint32 *dest, const tjs_uint32 *src, tjs_int len, tjs_int opa))
 {
-	register tjs_uint32 tmp, tmp2, tmp3;
+	tjs_uint32 tmp, tmp2, tmp3;
 	for(int lu_n = 0; lu_n < len; lu_n++)
 	{
 		{
@@ -913,7 +913,7 @@ TVP_GL_FUNC_DECL(void, TVPDarkenBlend_HDA_c, (tjs_uint32 *dest, const tjs_uint32
 
 TVP_GL_FUNC_DECL(void, TVPDarkenBlend_HDA_o_c, (tjs_uint32 *dest, const tjs_uint32 *src, tjs_int len, tjs_int opa))
 {
-	register tjs_uint32 tmp, m_src, d1;
+	tjs_uint32 tmp, m_src, d1;
 	for(int lu_n = 0; lu_n < len; lu_n++)
 	{
 		{
@@ -934,7 +934,7 @@ TVP_GL_FUNC_DECL(void, TVPDarkenBlend_HDA_o_c, (tjs_uint32 *dest, const tjs_uint
 
 TVP_GL_FUNC_DECL(void, TVPDarkenBlend_o_c, (tjs_uint32 *dest, const tjs_uint32 *src, tjs_int len, tjs_int opa))
 {
-	register tjs_uint32 tmp, m_src, d1;
+	tjs_uint32 tmp, m_src, d1;
 	for(int lu_n = 0; lu_n < len; lu_n++)
 	{
 		{
@@ -1007,7 +1007,7 @@ TVP_GL_FUNC_DECL(void, TVPLightenBlend_HDA_c, (tjs_uint32 *dest, const tjs_uint3
 
 TVP_GL_FUNC_DECL(void, TVPLightenBlend_HDA_o_c, (tjs_uint32 *dest, const tjs_uint32 *src, tjs_int len, tjs_int opa))
 {
-	register tjs_uint32 tmp, m_dest, d1;
+	tjs_uint32 tmp, m_dest, d1;
 	for(int lu_n = 0; lu_n < len; lu_n++)
 	{
 		{
@@ -1028,7 +1028,7 @@ TVP_GL_FUNC_DECL(void, TVPLightenBlend_HDA_o_c, (tjs_uint32 *dest, const tjs_uin
 
 TVP_GL_FUNC_DECL(void, TVPLightenBlend_o_c, (tjs_uint32 *dest, const tjs_uint32 *src, tjs_int len, tjs_int opa))
 {
-	register tjs_uint32 tmp, m_dest, d1;
+	tjs_uint32 tmp, m_dest, d1;
 	for(int lu_n = 0; lu_n < len; lu_n++)
 	{
 		{
