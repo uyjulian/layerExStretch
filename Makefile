@@ -7,6 +7,7 @@ SOURCES += ResampleImage.cpp
 SOURCES += WeightFunctor.cpp
 SOURCES += ResampleImageSSE2.cpp
 SOURCES += x86simdutil.cpp
+SOURCES += roundevenf.c
 SOURCES += LayerBitmapUtility.cpp
 SOURCES += tvpgl.cpp
 PROJECT_BASENAME = layerExStretch
